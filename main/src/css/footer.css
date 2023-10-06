@@ -1,0 +1,23 @@
+@import url('./var.css');
+
+.footer {
+  width: 100%;
+  height: 100px;
+  margin: 120px auto 0px auto;
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__copyright {
+  font-size: 20px;
+  color: var(--light-color);
+  font-size: 18px;
+}
+
+@media (max-width: 770px) {
+  .footer {
+    margin-top: 30px;
+  }
+}

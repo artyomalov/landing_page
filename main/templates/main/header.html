@@ -1,0 +1,21 @@
+<nav class="header__header-container">
+  <div class="header__menu-container">
+    {% for menu_item in menu_list %}
+    <a class="header__header-link" id="{{menu_item.link_to}}"
+      >{{menu_item.menu_item_name}}</a
+    >
+    {% endfor %}
+  </div>
+  <div class="header__social-links-container">
+    {% for social_link in social_links_list %}
+    <a
+      class="header__social-link"
+      href="{{social_link.link_to}}"
+      target="_blank"
+      ><img
+        class="header__social-link-image"
+        src="http://localhost:8000/media/{{social_link.link_logo}}"
+    /></a>
+    {% endfor %}
+  </div>
+</nav>

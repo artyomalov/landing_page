@@ -1,0 +1,10 @@
+.git
+core/.env
+__pycache__
+migrations
+db.sqlite3
+node_modules
+media/main
+media/service_data
+doctor_photo_small.jpg
+doctor_photo.jpg

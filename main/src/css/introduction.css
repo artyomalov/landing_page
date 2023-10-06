@@ -1,0 +1,129 @@
+@import url('./var.css');
+
+.introduction {
+  /* width: 100%; */
+  height: 600px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.introduction__text-container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.introduction__name,
+.introduction__occupation {
+  font-size: 60px;
+}
+
+.introduction__text {
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.introduction__singup {
+  display: block;
+  color: var(--dark-color);
+  text-decoration: none;
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  margin-top: 27px;
+  border-radius: 5px;
+  border: 3px solid var(--dark-color);
+  transition: all 0.2s linear;
+  font-size: 23px;
+}
+.introduction__singup:hover {
+  color: var(--hover-color);
+  cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+  .introduction__text-container {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .introduction__text-container {
+    width: 730px;
+  }
+}
+
+@media (max-width: 770px) {
+
+  .introduction {
+    height: 400px;
+  }
+
+  .introduction__text-container {
+    width: 600px;
+  }
+  .introduction__name,
+  .introduction__occupation {
+    width: 90%;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 640px) {
+  .introduction__text-container {
+    width: 600px;
+    padding-left: 2%;
+  }
+  .introduction__name,
+  .introduction__occupation {
+    font-size: 30px;
+  }
+  .introduction__occupation {
+    font-size: 23px;
+  }
+  .introduction__text {
+    font-size: 23px;
+  }
+  .introduction__singup {
+    width: 300px;
+    height: 35px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  
+  .introduction {
+    height: 200px;
+  }
+  .introduction__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .introduction__name,
+  .introduction__occupation {
+   text-align: center;
+   font-size: 23PX;
+  }
+ 
+  .introduction__text {
+    display: none;
+  }
+
+  .introduction__occupation {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .introduction__singup {
+    width: 250px;
+    height: 30px;
+    margin: 15px auto 0 auto;
+    font-size: 15px;
+  }
+}

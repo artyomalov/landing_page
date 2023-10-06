@@ -1,0 +1,14 @@
+<section id="services" class="services">
+  <h2 class="services__header">Услуги</h2>
+  <ul class="services__list">
+    {%for service in services %}
+    <li class="service__item">
+      <button class="service__control" aria-expanded="false">
+        <span class="service__title">{{service.title}}</span>
+        <span class="service__icon"></span>
+      </button>
+      <div class="service__content" aria-hidden="true">{{service.text}}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

@@ -1,0 +1,55 @@
+<section class="contact" id="contacts">
+  <h2 class="contact__header">Связаться со мной</h2>
+  <div class="contact__container">
+    <div class="contact__data-container">
+      <p class="contact__header-intro">
+        Пожалуйста связитесь со мной, если Вам необходимо получить больше
+        информации или назначить приём
+      </p>
+      <div class="contact__data-items">
+        {% for social_link in social_links_list %}
+        <p class="contact__contact-item">
+          <span class="contact__data-title">{{social_link.link_name}}: </span>
+          <a
+            class="contact__data-link"
+            href="{{social_link.link_to}}"
+            target="_blank"
+            >{{social_link.link_visible_data}}</a
+          >
+        </p>
+        {% endfor %}
+      </div>
+      <iframe
+        class="contact__map"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A68c761247b7b7b09f91a991a5dfe8779d5be25caa158a71c8d97396f7d207d49&amp;source=constructor"
+        width="600"
+        height="300"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <form id="form" class="contact__form" action="">
+      <input
+        class="contact__form-input"
+        type="text"
+        placeholder="Пожалуйста, введите имя"
+      />
+      <input
+        class="contact__form-input"
+        type="tel"
+        placeholder="Пожалуйста, введите телефонный номер"
+      />
+      <input
+        class="contact__form-input"
+        type="email"
+        placeholder="Пожалуйста, введите email"
+      />
+      <textarea
+        class="contact__form-input"
+        placeholder="Пожалуйста, опишите Вашу проблему"
+      ></textarea>
+      <button type="button" class="contact__form-button" id="sendButton">
+        Записаться на приём
+      </button>
+    </form>
+  </div>
+</section>

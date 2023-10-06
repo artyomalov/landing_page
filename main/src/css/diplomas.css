@@ -1,0 +1,88 @@
+@import url('./var.css');
+
+.diplomas {
+  width: 1280px;
+  height: fit-content;
+  margin: 50px auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transition-params);
+}
+
+.diplomas__slider-window {
+  overflow: hidden;
+  width: 85%;
+}
+
+.diplomas__slider-tape {
+  display: flex;
+  align-items: center;
+  transition: var(--transition-params);
+  z-index: -1;
+}
+
+.diplomas__diploma-img {
+  border-radius: 5px;
+  border: 10px solid transparent;
+}
+
+.diplomas__button {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-top: 4px solid var(--dark-color);
+  border-left: 4px solid var(--dark-color);
+  cursor: pointer;
+  transition: var(--transition-params);
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.diplomas__button:hover {
+  opacity: 0.9;
+}
+
+.diplomas__button:first-of-type {
+  transform: rotate(-45deg);
+}
+.diplomas__button:last-of-type {
+  transform: rotate(135deg);
+}
+
+@media (max-width: 1300px) {
+  .diplomas {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .diplomas {
+    width: 730px;
+  }
+}
+@media (max-width: 770px) {
+  .diplomas {
+    width: 530px;
+  }
+  .diplomas__button {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .diplomas {
+    width: 430px;
+  }
+}
+
+@media (max-width: 430px) {
+  .diplomas {
+    width: 280px;
+  }
+  .diplomas__button {
+    width: 15px;
+    height: 15px;
+  }
+}

@@ -1,0 +1,20 @@
+<section class="diplomas">
+  <span id="diplomas__left-button" class="diplomas__button"></span>
+  <div class="diplomas__slider-window"
+  id="dipolomas__slider-window">
+    <div
+      id="diplomas__slider-tape"
+      style="left: 0px"
+      class="diplomas__slider-tape"
+    >
+      {%for diploma in diplomas %}
+      <img
+        class="diplomas__diploma-img"
+        src="http://localhost:8000/media/{{diploma.diploma_img}}"
+        alt="{{diploma.diploma_name}}"
+      />
+      {% endfor %}
+    </div>
+  </div>
+  <span id="diplomas__right-button" class="diplomas__button"></span>
+</section>

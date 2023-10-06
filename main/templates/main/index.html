@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Практикующий хирург в Москве и Московской области с опытом более 15 лет.">
+    <meta name="robots" content="index,follow" />
+    <meta name="keywords" content="хирург, хирург в Москве, услуги хирурга в Москве" />
+    <title>Доктор Георгий Савоста - хирург в Москве и МО</title>
+    <link rel="shortcut icon" href="{% static 'main/favicon.png' %}" type="image/png">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/app.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body">
+    <header class="header">{% include 'main/header.html' %}</header>
+    <main class="main">
+      {% include 'main/introduction.html' %}
+      {% include 'main/about.html' %}
+      {% include 'main/diplomas.html' %}
+      {% include 'main/services.html' %}
+      {% include 'main/contacts.html' %}
+      <script type="module" src="{% static 'main/app.bundle.js' %}"></script>
+    </main>
+    <footer class="footer">{% include 'main/footer.html' %}</footer>
+  </body>
+</html>
