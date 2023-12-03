@@ -40,9 +40,8 @@ sendButton.addEventListener('click', () => {
 });
 
 //accordeon's handlers
-const services = document.querySelectorAll('.service__item');
 
+const services = document.querySelectorAll('.service__item');
 services.forEach((service) => {
   service.addEventListener('click', (e) => tabClickHandler(e));
 });
-

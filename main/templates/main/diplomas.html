@@ -10,7 +10,7 @@
       {%for diploma in diplomas %}
       <img
         class="diplomas__diploma-img"
-        src="http://localhost:8000/media/{{diploma.diploma_img}}"
+        src="{{domain}}{{diploma.diploma_img}}"
         alt="{{diploma.diploma_name}}"
       />
       {% endfor %}

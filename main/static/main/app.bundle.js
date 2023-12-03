@@ -1,1 +1,244 @@
-(()=>{"use strict";var e={495:(e,t,n)=>{n.d(t,{Z:()=>a});var r=n(81),o=n.n(r),i=n(645),s=n.n(i)()(o());s.push([e.id,"// extracted by mini-css-extract-plugin\nexport {};",""]);const a=s},645:e=>{e.exports=function(e){var t=[];return t.toString=function(){return this.map((function(t){var n="",r=void 0!==t[5];return t[4]&&(n+="@supports (".concat(t[4],") {")),t[2]&&(n+="@media ".concat(t[2]," {")),r&&(n+="@layer".concat(t[5].length>0?" ".concat(t[5]):""," {")),n+=e(t),r&&(n+="}"),t[2]&&(n+="}"),t[4]&&(n+="}"),n})).join("")},t.i=function(e,n,r,o,i){"string"==typeof e&&(e=[[null,e,void 0]]);var s={};if(r)for(var a=0;a<this.length;a++){var l=this[a][0];null!=l&&(s[l]=!0)}for(var c=0;c<e.length;c++){var d=[].concat(e[c]);r&&s[d[0]]||(void 0!==i&&(void 0===d[5]||(d[1]="@layer".concat(d[5].length>0?" ".concat(d[5]):""," {").concat(d[1],"}")),d[5]=i),n&&(d[2]?(d[1]="@media ".concat(d[2]," {").concat(d[1],"}"),d[2]=n):d[2]=n),o&&(d[4]?(d[1]="@supports (".concat(d[4],") {").concat(d[1],"}"),d[4]=o):d[4]="".concat(o)),t.push(d))}},t}},81:e=>{e.exports=function(e){return e[1]}},379:e=>{var t=[];function n(e){for(var n=-1,r=0;r<t.length;r++)if(t[r].identifier===e){n=r;break}return n}function r(e,r){for(var i={},s=[],a=0;a<e.length;a++){var l=e[a],c=r.base?l[0]+r.base:l[0],d=i[c]||0,u="".concat(c," ").concat(d);i[c]=d+1;var p=n(u),m={css:l[1],media:l[2],sourceMap:l[3],supports:l[4],layer:l[5]};if(-1!==p)t[p].references++,t[p].updater(m);else{var h=o(m,r);r.byIndex=a,t.splice(a,0,{identifier:u,updater:h,references:1})}s.push(u)}return s}function o(e,t){var n=t.domAPI(t);return n.update(e),function(t){if(t){if(t.css===e.css&&t.media===e.media&&t.sourceMap===e.sourceMap&&t.supports===e.supports&&t.layer===e.layer)return;n.update(e=t)}else n.remove()}}e.exports=function(e,o){var i=r(e=e||[],o=o||{});return function(e){e=e||[];for(var s=0;s<i.length;s++){var a=n(i[s]);t[a].references--}for(var l=r(e,o),c=0;c<i.length;c++){var d=n(i[c]);0===t[d].references&&(t[d].updater(),t.splice(d,1))}i=l}}},569:e=>{var t={};e.exports=function(e,n){var r=function(e){if(void 0===t[e]){var n=document.querySelector(e);if(window.HTMLIFrameElement&&n instanceof window.HTMLIFrameElement)try{n=n.contentDocument.head}catch(e){n=null}t[e]=n}return t[e]}(e);if(!r)throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");r.appendChild(n)}},216:e=>{e.exports=function(e){var t=document.createElement("style");return e.setAttributes(t,e.attributes),e.insert(t,e.options),t}},565:(e,t,n)=>{e.exports=function(e){var t=n.nc;t&&e.setAttribute("nonce",t)}},795:e=>{e.exports=function(e){if("undefined"==typeof document)return{update:function(){},remove:function(){}};var t=e.insertStyleElement(e);return{update:function(n){!function(e,t,n){var r="";n.supports&&(r+="@supports (".concat(n.supports,") {")),n.media&&(r+="@media ".concat(n.media," {"));var o=void 0!==n.layer;o&&(r+="@layer".concat(n.layer.length>0?" ".concat(n.layer):""," {")),r+=n.css,o&&(r+="}"),n.media&&(r+="}"),n.supports&&(r+="}");var i=n.sourceMap;i&&"undefined"!=typeof btoa&&(r+="\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(i))))," */")),t.styleTagTransform(r,e,t.options)}(t,e,n)},remove:function(){!function(e){if(null===e.parentNode)return!1;e.parentNode.removeChild(e)}(t)}}}},589:e=>{e.exports=function(e,t){if(t.styleSheet)t.styleSheet.cssText=e;else{for(;t.firstChild;)t.removeChild(t.firstChild);t.appendChild(document.createTextNode(e))}}}},t={};function n(r){var o=t[r];if(void 0!==o)return o.exports;var i=t[r]={id:r,exports:{}};return e[r](i,i.exports,n),i.exports}n.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return n.d(t,{a:t}),t},n.d=(e,t)=>{for(var r in t)n.o(t,r)&&!n.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},n.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),n.nc=void 0,(()=>{const e=(e,t,n)=>{e.addEventListener("click",(()=>{const e=document.getElementById(t).getBoundingClientRect().top+window.pageYOffset-n;window.scrollTo({top:e,behavior:"smooth"})}))},t=["1","2","3","4","5","6","7","8","9","0","+","(",")"],r=(e,t,n)=>{e.placeholder=t,e.classList.toggle("contact__form-input-warning"),setTimeout((()=>e.classList.toggle("contact__form-input-warning")),n)},o=(e,t)=>{const n=`\n    <div class="modal">\n      <div class="modal__container">\n        <p class="modal__title">${e}</p>\n        <p class="modal__text">\n         ${t}\n        </p>\n      </div>\n    </div>\n    `;document.getElementById("body").insertAdjacentHTML("afterbegin",n);const r=document.querySelector(".modal");setTimeout((()=>{r.style.opacity=1}),150),setTimeout((()=>{r.style.opacity=0}),4300),setTimeout((()=>{r.remove()}),4600)},i=async e=>{let n=!1;const i=e[0];""===i.value&&(r(i,"Пожалуйста введите имя",3e3),n=!0);const s=e[1],a=s.value.split("").every((e=>t.includes(e)));""!==s.value&&!1!==a||(r(s,"Пожалуйста введите корректный телефонный номер",3e3),n=!0);const l=e[2];l.value.includes("@")||(r(l,"Пожалуйста введите корректный email",3e3),n=!0);const c=e[3];let d=c.value;""===c.value&&(d="Пользователь не добавил описание");const u={userName:i.value,userPhoneNumber:s.value,userEmail:l.value,userMessage:d};n||((async e=>{try{const t=await fetch("http://localhost:8000/notify/",{method:"POST",headers:{"Content-Type":"application/json;charset=utf-8","Access-Control-Allow-Origin":"http://127.0.0.1:8000/"},mode:"cors",body:JSON.stringify(e)});if(!await t.json())throw new Error("fetch error");return!0}catch(e){return console.log(e),!1}})(u)?(e.forEach((e=>{e.value=""})),o("Сообщение успешно отправлено!","Благодарю Вас за обращение, я свяжусь с Вами в течение 24 часов.")):o("Ошибка!","Что-то пошло не так. Пожалуйста попробуйте позже."))};function s(e,t,n){return(t=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var r=n.call(e,"string");if("object"!=typeof r)return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return String(e)}(e);return"symbol"==typeof t?t:String(t)}(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}var a=n(379),l=n.n(a),c=n(795),d=n.n(c),u=n(569),p=n.n(u),m=n(565),h=n.n(m),f=n(216),v=n.n(f),y=n(589),g=n.n(y),b=n(495),_={};_.styleTagTransform=g(),_.setAttributes=h(),_.insert=p().bind(null,"head"),_.domAPI=d(),_.insertStyleElement=v(),l()(b.Z,_),b.Z&&b.Z.locals&&b.Z.locals,document.querySelectorAll(".header__header-link").forEach((t=>{e(t,t.id.slice(1),100)}));const w=document.getElementById("introduction__singup");e(w,"form",100);const E=document.getElementById("diplomas__slider-tape"),x=document.querySelectorAll(".diplomas__diploma-img"),S=document.getElementById("diplomas__left-button"),A=new class{constructor(e,t,n,r,o){s(this,"diplomasCounter",3),s(this,"count",0),s(this,"sliderWidth",void 0),this.sliderDomElement=e,this.sliderTapeDomElement=t,this.diplomasImagesArray=n,this.sliderButtonRight=r,this.sliderButtonLeft=o}rollSlider(){this.sliderTapeDomElement.style.transform="translate(-"+this.count*this.sliderWidth/this.diplomasCounter+"px"}initialize(){const e=window.screen.width;e<770&&(this.diplomasCounter=2),e<425&&(this.diplomasCounter=1),this.sliderWidth=document.querySelector(this.sliderDomElement).offsetWidth,this.sliderTapeDomElement.style.width=this.sliderWidth*this.diplomasImagesArray.length+"px",this.diplomasImagesArray.forEach((e=>{e.style.width=this.sliderWidth/this.diplomasCounter+"px",e.style.height="auto"})),this.rollSlider()}addScrollActionsForScrollButtons(){this.sliderButtonRight.addEventListener("click",(()=>{this.count>this.diplomasImagesArray.length-4||(this.count++,this.rollSlider())})),this.sliderButtonLeft.addEventListener("click",(()=>{this.count<1||(this.count--,this.rollSlider())}))}initSlider(){this.initialize(),this.addScrollActionsForScrollButtons()}}("#dipolomas__slider-window",E,x,document.getElementById("diplomas__right-button"),S);A.initSlider(),window.addEventListener("resize",(()=>{A.initialize()}));const T=document.getElementById("sendButton"),I=document.querySelectorAll(".contact__form-input");T.addEventListener("click",(()=>{i(I)})),document.querySelectorAll(".service__item").forEach((e=>{e.addEventListener("click",(e=>(e=>{const t=e.currentTarget,n=t.querySelector(".service__control"),r=t.querySelector(".service__content");t.classList.toggle("open"),t.classList.contains("open")?(n.setAttribute("aria-expanded",!0),r.setAttribute("aria-expanded",!1),r.style.maxHeight=r.scrollHeight+40+"px",console.log(r.style.maxHeight)):(n.setAttribute("aria-expanded",!1),r.setAttribute("aria-expanded",!0),r.style.maxHeight=null)})(e)))}))})()})();
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+var __webpack_exports__ = {};
+
+;// CONCATENATED MODULE: ./src/js/srollToElement.js
+const scrollToElement = (clickedElement, moveToElementId, offset) => {
+  clickedElement.addEventListener('click', () => {
+    const moveToElement = document.getElementById(moveToElementId);
+    const moveToElementPosition = moveToElement.getBoundingClientRect().top;
+    const offsetPosition = moveToElementPosition + window.pageYOffset - offset;
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  });
+};
+/* harmony default export */ const srollToElement = (scrollToElement);
+;// CONCATENATED MODULE: ./src/js/const.js
+const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '(', ')'];
+
+;// CONCATENATED MODULE: ./src/js/inputErrorHandler.js
+const inputErrrorHandler = (element, message, timeout) => {
+  element.placeholder = message;
+  element.classList.toggle('contact__form-input-warning');
+  setTimeout(() => {
+    return element.classList.toggle('contact__form-input-warning');
+  }, timeout);
+  return;
+};
+/* harmony default export */ const inputErrorHandler = (inputErrrorHandler);
+;// CONCATENATED MODULE: ./src/js/sendDataToTgHandler.js
+const sendDataToTgHandler = async sendData => {
+  try {
+    const response = await fetch('http://localhost:8000', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+        'Access-Control-Allow-Origin': 'http://localhost:8000'
+      },
+      mode: 'cors',
+      body: JSON.stringify(sendData)
+    });
+    const data = await response.json();
+    if (!data) {
+      throw new Error('fetch error');
+    }
+    return true;
+  } catch (error) {
+    console.log(error);
+    return false;
+  }
+};
+/* harmony default export */ const js_sendDataToTgHandler = (sendDataToTgHandler);
+;// CONCATENATED MODULE: ./src/js/createNotifyUserModalWindow.js
+const createNotifyUserModalWindow = (title, message) => {
+  return `
+    <div class="modal">
+      <div class="modal__container">
+        <p class="modal__title">${title}</p>
+        <p class="modal__text">
+         ${message}
+        </p>
+      </div>
+    </div>
+    `;
+};
+/* harmony default export */ const js_createNotifyUserModalWindow = (createNotifyUserModalWindow);
+;// CONCATENATED MODULE: ./src/js/notifyUserHandler.js
+
+const notifyUserHandler = (notificationTitle, notificationText) => {
+  const modalWindowHTML = js_createNotifyUserModalWindow(notificationTitle, notificationText);
+  const body = document.getElementById('body');
+  body.insertAdjacentHTML('afterbegin', modalWindowHTML);
+  const modalWindow = document.querySelector('.modal');
+  // modalWindow.style.opacity = 1;
+  setTimeout(() => {
+    modalWindow.style.opacity = 1;
+  }, 150);
+  setTimeout(() => {
+    modalWindow.style.opacity = 0;
+  }, 4300);
+  setTimeout(() => {
+    modalWindow.remove();
+  }, 4600);
+};
+/* harmony default export */ const js_notifyUserHandler = (notifyUserHandler);
+;// CONCATENATED MODULE: ./src/js/sendButtonClickHandler.js
+
+
+
+
+const sendButtonClickHandler = async formInputs => {
+  let errorFlag = false;
+  const userNameInput = formInputs[0];
+  if (userNameInput.value === '') {
+    inputErrorHandler(userNameInput, 'Пожалуйста введите имя', 3000);
+    errorFlag = true;
+  }
+  const userPhoneNumberInput = formInputs[1];
+  const phoneNumberToArray = userPhoneNumberInput.value.split('');
+  const phoneNumberIsValidFlag = phoneNumberToArray.every(item => {
+    return numbers.includes(item);
+  });
+  if (userPhoneNumberInput.value === '' || phoneNumberIsValidFlag === false) {
+    inputErrorHandler(userPhoneNumberInput, 'Пожалуйста введите корректный телефонный номер', 3000);
+    errorFlag = true;
+  }
+  const userEmailInput = formInputs[2];
+  if (!userEmailInput.value.includes('@')) {
+    inputErrorHandler(userEmailInput, 'Пожалуйста введите корректный email', 3000);
+    errorFlag = true;
+  }
+  const userMessageInput = formInputs[3];
+  let userMessage = userMessageInput.value;
+  if (userMessageInput.value === '') {
+    userMessage = 'Пользователь не добавил описание';
+  }
+  const userData = {
+    userName: userNameInput.value,
+    userPhoneNumber: userPhoneNumberInput.value,
+    userEmail: userEmailInput.value,
+    userMessage: userMessage
+  };
+  if (errorFlag) return;
+  const successfullRequerstFlag = js_sendDataToTgHandler(userData);
+  if (!successfullRequerstFlag) {
+    js_notifyUserHandler('Ошибка!', 'Что-то пошло не так. Пожалуйста попробуйте позже.');
+    return; //дописать всплывающее окно для обработки ошибки
+  }
+
+  formInputs.forEach(input => {
+    input.value = '';
+  });
+  js_notifyUserHandler('Сообщение успешно отправлено!', 'Благодарю Вас за обращение, я свяжусь с Вами в течение 24 часов.');
+};
+/* harmony default export */ const js_sendButtonClickHandler = (sendButtonClickHandler);
+;// CONCATENATED MODULE: ./src/js/tabClickHandler.js
+const tabClickHandler = e => {
+  const serviceItem = e.currentTarget;
+  const serviceControl = serviceItem.querySelector('.service__control');
+  const serviceContent = serviceItem.querySelector('.service__content');
+  serviceItem.classList.toggle('open');
+  if (serviceItem.classList.contains('open')) {
+    serviceControl.setAttribute('aria-expanded', true);
+    serviceContent.setAttribute('aria-expanded', false);
+    serviceContent.style.maxHeight = serviceContent.scrollHeight + 40 + 'px';
+    console.log(serviceContent.style.maxHeight);
+  } else {
+    serviceControl.setAttribute('aria-expanded', false);
+    serviceContent.setAttribute('aria-expanded', true);
+    serviceContent.style.maxHeight = null;
+  }
+};
+/* harmony default export */ const js_tabClickHandler = (tabClickHandler);
+;// CONCATENATED MODULE: ./src/js/slider.js
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+class SliderActions {
+  constructor(sliderDomElement, sliderTapeDomElement, diplomasImagesArray, sliderButtonRight, sliderButtonLeft) {
+    //   '#dipolomas__slider-window'
+    _defineProperty(this, "diplomasCounter", 3);
+    _defineProperty(this, "count", 0);
+    _defineProperty(this, "sliderWidth", void 0);
+    this.sliderDomElement = sliderDomElement;
+    this.sliderTapeDomElement = sliderTapeDomElement;
+    this.diplomasImagesArray = diplomasImagesArray;
+    this.sliderButtonRight = sliderButtonRight;
+    this.sliderButtonLeft = sliderButtonLeft;
+  }
+  rollSlider() {
+    this.sliderTapeDomElement.style.transform = 'translate(-' + this.count * this.sliderWidth / this.diplomasCounter + 'px';
+  }
+  initialize() {
+    const windowWidth = window.screen.width;
+    if (windowWidth < 770) this.diplomasCounter = 2;
+    if (windowWidth < 425) this.diplomasCounter = 1;
+    this.sliderWidth = document.querySelector(this.sliderDomElement).offsetWidth;
+    this.sliderTapeDomElement.style.width = this.sliderWidth * this.diplomasImagesArray.length + 'px';
+    this.diplomasImagesArray.forEach(image => {
+      image.style.width = this.sliderWidth / this.diplomasCounter + 'px';
+      image.style.height = 'auto';
+    });
+    this.rollSlider();
+  }
+  addScrollActionsForScrollButtons() {
+    this.sliderButtonRight.addEventListener('click', () => {
+      if (this.count > this.diplomasImagesArray.length - 4) return;
+      this.count++;
+      this.rollSlider();
+    });
+    this.sliderButtonLeft.addEventListener('click', () => {
+      if (this.count < 1) return;
+      this.count--;
+      this.rollSlider();
+    });
+  }
+  initSlider() {
+    this.initialize();
+    this.addScrollActionsForScrollButtons();
+  }
+}
+/* harmony default export */ const slider = (SliderActions);
+;// CONCATENATED MODULE: ./src/index.js
+
+
+
+
+
+
+// scroll to the section of the page
+const menuLinks = document.querySelectorAll('.header__header-link');
+menuLinks.forEach(link => {
+  srollToElement(link, link.id.slice(1), 100);
+});
+const signInButton = document.getElementById('introduction__singup');
+srollToElement(signInButton, 'form', 100);
+
+// slider handlers
+const diplomasTape = document.getElementById('diplomas__slider-tape');
+const diplomasImages = document.querySelectorAll('.diplomas__diploma-img');
+const leftButton = document.getElementById('diplomas__left-button');
+const rightButton = document.getElementById('diplomas__right-button');
+const sliderActions = new slider('#dipolomas__slider-window', diplomasTape, diplomasImages, rightButton, leftButton);
+sliderActions.initSlider();
+window.addEventListener('resize', () => {
+  sliderActions.initialize();
+});
+
+//send form data to telegram
+const sendButton = document.getElementById('sendButton');
+const inputs = document.querySelectorAll('.contact__form-input');
+sendButton.addEventListener('click', () => {
+  js_sendButtonClickHandler(inputs);
+});
+
+//accordeon's handlers
+
+const services = document.querySelectorAll('.service__item');
+services.forEach(service => {
+  service.addEventListener('click', e => js_tabClickHandler(e));
+});
+/******/ })()
+;

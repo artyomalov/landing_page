@@ -43,8 +43,7 @@ INSTALLED_APPS = [
     'django_browser_reload',
     'django_cleanup.apps.CleanupConfig',
     'main.apps.MainConfig',
-    'service_data.apps.ServiceDataConfig',
-
+    'tg_message_sender.apps.TgMessageSenderConfig'
 ]
 
 MIDDLEWARE = [
@@ -118,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-RU'
 
 TIME_ZONE = 'UTC'
 
@@ -131,7 +130,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'main', 'static', 'main'), ]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'main', 'static', 'main'), ]
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
@@ -140,5 +139,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-BOT_TOKEN = os.environ.get('BOT_TOKEN')
-CHANNEL_ID = os.environ.get('CHANNEL_ID')
+BOT_TOKEN = '6529899609:AAHDwK0kRlPGBYXK4v9llpTx-Xv4Fxi0qRw'
+CHANNEL_ID = '-1001970402624'
